@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Pro from "./Projects";
 import Footer from "./Footer";
 import './home.css';
@@ -116,49 +115,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// Styles
-const styles = {
-    impactSection: {
-      background: "#1a1a2e",
-      color: "#fff",
-      padding: "40px",
-      borderRadius: "12px",
-      textAlign: "center",
-      border: "2px solid #4db8ff",
-      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-      width: "80%",
-      margin: "40px auto",
-    },
-    heading: {
-      fontSize: "2rem",
-      marginBottom: "20px",
-      color: "#4db8ff",
-    },
-    impactContainer: {
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-      gap: "20px",
-      justifyContent: "center",
-      padding: "20px 0",
-    },
-    card: {
-      backgroundColor: "#0f3460",
-      padding: "20px",
-      borderRadius: "12px",
-      textAlign: "center",
-      boxShadow: "0 4px 10px rgba(55, 73, 84, 0.5)",
-      transition: "transform 0.3s ease-in-out",
-      cursor: "pointer",
-    },
-    cardValue: {
-      fontSize: "1.8rem",
-      fontWeight: "bold",
-      color: "#4db8ff",
-    },
-    cardTitle: {
-      fontSize: "1.2rem",
-      marginTop: "8px",
-    },
-  };
-  

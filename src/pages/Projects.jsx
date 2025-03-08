@@ -68,22 +68,20 @@ const Projects = () => {
             key={index}
             ref={(el) => (projectRefs.current[index] = el)}
             style={{
-              background: "#1a1a2e",
-              color: "white",
-              padding: "20px",
-              borderRadius: "12px",
-              textAlign: "center",
-              opacity: "0",
-              marginBottom:"50px",
-              marginLeft:"15px",
-              transform: "translateY(50px)",
-              transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
-              cursor: "pointer",
-              position: "relative",
-              overflow: "hidden",
-              transform: hoverIndex === index ? "scale(1.1)" : "scale(1)",
-              boxShadow: hoverIndex === index ? "0 15px 30px rgba(77, 184, 255, 0.5)" : "none",
-              transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+                background: "#1a1a2e",
+                color: "white",
+                padding: "20px",
+                borderRadius: "12px",
+                textAlign: "center",
+                opacity: "0",
+                marginBottom: "50px",
+                marginLeft: "15px",
+                transform: hoverIndex === index ? "scale(1.1) translateY(0)" : "scale(1) translateY(50px)",
+                transition: "opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease-in-out",
+                cursor: "pointer",
+                position: "relative",
+                overflow: "hidden",
+                boxShadow: hoverIndex === index ? "0 15px 30px rgba(77, 184, 255, 0.5)" : "none",
             }}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
