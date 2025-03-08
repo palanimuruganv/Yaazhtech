@@ -1,4 +1,17 @@
 /* General styling */
+/* Reset default margin & padding */
+* {
+  
+  box-sizing: border-box;
+}
+
+/* Ensure body takes full width without extra scrolling */
+body, html {
+  width: 100%;
+  
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #f8f8f8; /* Optional: Set background */
+}
 body{
   background: linear-gradient(135deg, #0a0a0a, #1a1a40);
   
@@ -239,6 +252,7 @@ body{
 /* Fix layout so content doesn’t go under navbar */
 .app-container {
   margin-top: 80px;
+  width: 100%;
 }
 
 /* App general styles */
