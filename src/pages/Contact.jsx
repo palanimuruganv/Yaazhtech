@@ -63,6 +63,7 @@ const styles = {
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     display: "inline-block",
     textAlign: "left",
+    marginLeft:"10Px",
   },
 };
 
